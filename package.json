@@ -4,13 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node "
+    "start:dev": "nodemon server.js",
+    "services:build": "docker-compose up --build",
+    "services:up": "docker-compose up",
+    "services:down": "docker-compose down"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2",
-    "prom-client": "^15.1.2"
+    "express": "4.19.2",
+    "prom-client": "15.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.0"
   }
 }
